@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest test/app.test.js"
   },
   "author": "Green touch technology",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "express": "^4.18.0",
     "mariadb": "^3.0.0",
     "mysql": "^2.18.1",
+    "supertest": "^6.2.3",
     "uuid": "^8.3.2"
   }
 }
