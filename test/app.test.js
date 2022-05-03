@@ -1,4 +1,4 @@
-const server = require("../server")
+const server = require("../routers/routes")
 const supertest = require("supertest")
 const request = supertest(server)
 
