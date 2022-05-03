@@ -21,8 +21,9 @@ router.post("/delete_journal_entries", (req, res) => {
   Journal_Entries.Delete(req, res);
 });
 
-app.get("/test", (_req, res) =>  {
-  res.status(200).send("Hello world")
-})
+// github action test
+router.get("/test", (_req, res) => {
+  res.status(200).send("Hello world");
+});
 
 module.exports = router;
