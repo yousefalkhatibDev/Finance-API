@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest src/app.test.js"
+    "test": "jest"
   },
   "author": "Green touch technology",
   "license": "ISC",
