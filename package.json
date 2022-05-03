@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest src/app.test.js"
   },
   "author": "Green touch technology",
   "license": "ISC",
