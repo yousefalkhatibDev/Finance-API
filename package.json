@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src",
     "test": "jest test/app.test.js"
   },
   "author": "Green touch technology",

@@ -1,6 +1,6 @@
-const server = require("../routers/routes")
+const routes = require("../routers/routes")
 const supertest = require("supertest")
-const request = supertest(server)
+const request = supertest(routes)
 
 describe("/test endpoint", () => {
     it("should return a response", async () => {

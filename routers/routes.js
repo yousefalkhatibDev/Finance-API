@@ -22,7 +22,7 @@ router.post("/delete_journal_entries", (req, res) => {
 });
 
 // github action test
-router.get("/test", (_req, res) => {
+router.get("/test", (req, res) => {
   res.status(200).send("Hello world");
 });
 
