@@ -3,8 +3,6 @@ const common_functiions = require("../helper/common_functions");
 const groups = require("../models/groups");
 
 module.exports = {
-  Get: async (req, res) => {},
-
   Insert: async (req, res, je_id, je_accounts) => {
     for (let i = 0; i < je_accounts.length; i++) {
       const jea_id = common_functiions.generateId().substring(0,10); // generate id
@@ -23,7 +21,7 @@ module.exports = {
         var value = je_accounts[i].jea_credit - je_accounts[i].jea_debit;
 
         // update the sum of the group
-        groups.update_sum(req, res, je_accounts[i].jea_super_group, value);
+        groups.Update_Group_Sum(req, res, je_accounts[i].jea_super_group, value);
       } else {
         res.status(500).json({ error: "Error inserting data in journal entries accounts table" });
       }
@@ -32,5 +30,5 @@ module.exports = {
 
   Update: async (req, res) => {},
 
-  delete: async (req, res) => {},
+  Delete: async (req, res) => {},
 }
