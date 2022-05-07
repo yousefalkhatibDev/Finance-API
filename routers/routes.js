@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Journal_Entries = require("../models/Journal_Entries");
-const Groups = require("../models/Groups");
+const Groups = require("../models/groups");
 
 // All journal entries functions
 

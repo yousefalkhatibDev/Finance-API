@@ -52,8 +52,6 @@ module.exports = {
         }
       }
 
-      console.log(data);
-
       res.status(200).json({ data: data }); // send the data back to the client
     } catch (error) {
       res.status(500).json({ error: error.message });
