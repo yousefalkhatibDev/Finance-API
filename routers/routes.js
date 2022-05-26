@@ -4,7 +4,7 @@ const Journal_Entries = require("../models/Journal_Entries");
 const Groups = require("../models/groups");
 const Reports = require("../models/reports");
 
-router.post("/test-heroku", (req, res) => {
+router.get("/test-heroku", (req, res) => {
   res.send("worked");
 })
 
