@@ -5,12 +5,11 @@ const groups = require("../models/groups");
 module.exports = {
   Insert: async (req, res, je_id, je_accounts) => {
     for (let i = 0; i < je_accounts.length; i++) {
-      const jea_id = common_functiions.generateId().substring(0,10); // generate id
 
       // insert data in the journal entries accounts table
       const sqlQuery = "INSERT INTO journal_entries_accounts (jea_id, jea_journal_entrie, jea_description, jea_credit, jea_debit) VALUES (?,?,?,?,?)";
       const result = await pool.query(sqlQuery, [
-        jea_id,
+        common_functiions.Generate_Id(),
         je_id,
         je_accounts[i].jea_description,
         je_accounts[i].jea_credit,
@@ -27,8 +26,4 @@ module.exports = {
       }
     }
   },
-
-  Update: async (req, res) => {},
-
-  Delete: async (req, res) => {},
 }
