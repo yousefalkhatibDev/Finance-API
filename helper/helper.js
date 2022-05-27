@@ -1,11 +1,11 @@
 const mariadb = require("mariadb");
 
 const pool = mariadb.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  database: process.env.DB_NAME,
-  port: process.env.DB_HOST_PORT,
+  host: "us-cdbr-east-05.cleardb.net",
+  user: "beaeb16c34cdd4",
+  password: "0e45828b",
+  database: "heroku_9da7f8b5cbdaffa",
+  port: 3306,
   connectionLimit: 5,
 });
 
