@@ -15,5 +15,5 @@ app.use("/", router);
 
 // Start listening
 app.listen(PORT, function () {
-  console.log("Example app listening on port " + PORT);
+  console.log("listening on port " + PORT);
 });
